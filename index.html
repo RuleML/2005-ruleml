@@ -1,0 +1,815 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="RuleML05-CFPv7_files/filelist.xml">
+<link rel=Edit-Time-Data href="RuleML05-CFPv7_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Rules and Rule Markup Languages for the Semantic Web </title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Development</o:Author>
+  <o:LastAuthor>Danny D'Amours</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2005-09-26T13:01:00Z</o:Created>
+  <o:LastSaved>2005-09-26T13:01:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1138</o:Words>
+  <o:Characters>6493</o:Characters>
+  <o:Company>Macgregor</o:Company>
+  <o:Lines>54</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7616</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_AdHocReviewCycleID dt:dt="float">-920838031</o:_AdHocReviewCycleID>
+  <o:_NewReviewCycle dt:dt="string"></o:_NewReviewCycle>
+  <o:_EmailSubject dt:dt="string">RuleML2005 and OWL Workshop - Updated Program &amp; Call For Participation</o:_EmailSubject>
+  <o:_AuthorEmail dt:dt="string">suzette@mitre.org</o:_AuthorEmail>
+  <o:_AuthorEmailDisplayName dt:dt="string">Stoutenburg, Suzette</o:_AuthorEmailDisplayName>
+  <o:_PreviousAdHocReviewCycleID dt:dt="float">1955292870</o:_PreviousAdHocReviewCycleID>
+  <o:_ReviewingToolsShownOnce dt:dt="string"></o:_ReviewingToolsShownOnce>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-parent:"Comment Text";
+	mso-style-next:"Comment Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("RuleML05-CFPv7_files/header.html") fs;
+	mso-footnote-continuation-separator:url("RuleML05-CFPv7_files/header.html") fcs;
+	mso-endnote-separator:url("RuleML05-CFPv7_files/header.html") es;
+	mso-endnote-continuation-separator:url("RuleML05-CFPv7_files/header.html") ecs;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-header:url("RuleML05-CFPv7_files/header.html") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:321659039;
+	mso-list-template-ids:1744993682;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:737703527;
+	mso-list-template-ids:975734128;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:833953227;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1485591904 67698695 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:880674550;
+	mso-list-template-ids:1825324510;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1489908115;
+	mso-list-template-ids:564697192;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1631592314;
+	mso-list-template-ids:-2002102694;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1788039372;
+	mso-list-template-ids:-602637638;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1872062531;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1575016514 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=navy style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b><span style='font-size:18.0pt'><a
+href="http://2005.ruleml.org/">RuleML-2005</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b><span style='font-size:16.0pt'>International
+Conference on<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b><span style='font-size:16.0pt'>Rules and Rule Markup
+Languages for the Semantic Web<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b><span style='font-size:16.0pt'>and <a
+href="http://www.mindswap.org/2005/OWLWorkshop/">OWL Workshop</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><st1:place w:st="on"><st1:City w:st="on"><b>Galway</b></st1:City><b>,
+ <st1:country-region w:st="on">Ireland</st1:country-region></b></st1:place><b><br>
+10-12 November 2005 <o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;mso-outline-level:3'><b><span style='font-size:16.0pt'>Call
+for Participation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b><span style='font-size:16.0pt'>Register Here: </span></b><u><span
+style='font-size:14.0pt'><a href="https://eurwebsite.com/mlrules/register.asp">https://eurwebsite.com/mlrules/register.asp</a><o:p></o:p></span></u></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'><a href="http://2005.ruleml.org/Program.html">Preliminary
+Program Available</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'>Summary<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'>Rules are widely recognized to
+be a major part of the frontier of the Semantic Web, and critical to the early
+adoption and applications of knowledge-based techniques in e-business,
+especially enterprise integration and B2B e-commerce. This includes knowledge
+representation (KR) theory and algorithms; markup languages based on such KR;
+engines, translators, and other tools; relationships to standardization
+efforts; and, not least, applications.<span style='mso-spacerun:yes'> 
+</span>Interest and activity in the area of Rules for the Semantic Web has
+grown rapidly over the last five years. The RuleML-2005 Conference is aimed to
+be this year’s premiere scientific conference on the topic.<span
+style='mso-spacerun:yes'>  </span>It continues in topic, leadership, and
+collaboration with the previous series of three highly successful annual
+international workshops (last year’s was<span style='mso-spacerun:yes'> 
+</span>RuleML-2004).<span style='mso-spacerun:yes'>  </span>RuleML-2005 is
+colocated with the International Semantic Web Conference (<a
+href="http://iswc2005.semanticweb.org/">http://iswc2005.semanticweb.org/</a>)
+which meets in <st1:place w:st="on">Galway</st1:place> 6-10 November 2005.</p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'>This theme for RuleML 2005 is rule languages for reactive
+and proactive rules, complex event processing, and event-driven rules, for
+applications on the Semantic Web.<span style='mso-spacerun:yes'>  </span>The
+conference will also include an <b style='mso-bidi-font-weight:normal'>OWL
+Workshop</b>, hosted by Peter Patel-Schneider.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Our
+keynote speaker is <b style='mso-bidi-font-weight:normal'>Sir Tim Berners-Lee</b>,
+who will speak on the topic of “Web of Rules”.<span style='mso-spacerun:yes'> 
+</span>The talk will discuss whether knowledge can be represented in a web-like
+way using rules, so as to derive serendipitous benefit from the unplanned reuse
+of such knowledge.<span style='mso-spacerun:yes'>  </span>Dr. <b
+style='mso-bidi-font-weight:normal'>Opher Etzion</b> from IBM is also an
+invited speaker, who will discuss an architecture for event driven
+applications.<span style='mso-spacerun:yes'>  </span>Dr. Susie Stephens from
+Oracle will give a talk on the use of Semantic Web technologies and rules in
+life sciences.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'>Workshop
+Goals<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><span style='mso-bidi-font-weight:
+bold'>The goal of RuleML 2005 is to bring together researchers, practitioners,
+and providers to exchange information about requirements, applications,
+technology solutions, and the latest research on rule languages and standards,
+with the ultimate goal of advancing a standard framework for Semantic Web
+rules.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><span style='mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'>Deliverables<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><span style='mso-bidi-font-weight:
+bold'>The conference will result in the following deliverables.<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-outline-level:3;mso-list:l7 level1 lfo10;
+     tab-stops:list 36.0pt'><span style='mso-bidi-font-weight:bold'>Conference
+     proceedings<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-outline-level:3;mso-list:l7 level1 lfo10;
+     tab-stops:list 36.0pt'><span style='mso-bidi-font-weight:bold'>Conference
+     presentations<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-outline-level:3;mso-list:l7 level1 lfo10;
+     tab-stops:list 36.0pt'><span style='mso-bidi-font-weight:bold'>Conference
+     minutes<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-outline-level:3;mso-list:l7 level1 lfo10;
+     tab-stops:list 36.0pt'><span style='mso-bidi-font-weight:bold'>Recommendations
+     on the way ahead<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'>Background<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'>Rules complement and extend
+ontologies on the Semantic Web.<span style='mso-spacerun:yes'>  </span>Rules
+can be used in combination with ontologies, or as a means to specify
+ontologies.<span style='mso-spacerun:yes'>  </span>In particular, simple rules
+and axioms can be applied via ontology languages, either in conjunction with or
+as an alternative to description logics. Rules can also be applied over
+ontologies, so as to draw inferences, express constraints, specify policies,
+react to events/changes, discover new knowledge, transform data, etc. Rule
+markup languages enrich web ontologies so as to extend definitions of derived
+concepts, and supporting publishing rules on the Web, exchange rules between
+different systems and tools, share guidelines and policies, merge and maintain
+rulebases, and more.</p>
+
+<p class=MsoNormal style='mso-outline-level:3'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:14.0pt'>Topics
+of Interest<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-outline-level:3'><b><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='color:black'>Topics
+of interest include the following. <o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Rule-based
+     policies:<span style='mso-spacerun:yes'>  </span>their specification,
+     execution, and management</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Combining
+     rules with ontologies</li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Reaction
+     rules for the Semantic Web<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Complex
+     event processing<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Rules
+     for event correlation<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Event-driven/action
+     rule languages and models<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Semantic
+     Rule Management<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Resolving
+     conflicts in triggered action sets <o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Extraction
+     of rules from unstructured data sources<o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Languages,
+     including standards (RuleML, SWRL, Jess, N3, F-logic/FLORA-2, etc.) <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Execution
+     models, rule engines, and environments </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Implemented
+     tools and systems for active rules on the Semantic Web </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Combining
+     active rules and ontologies</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Integrating
+     active rules and description logics</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Applying
+     active rules for Semantic Web Services</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Modeling
+     of business rules and event-driven/active rules</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Rule-based
+     software agents and the Semantic Web </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>E-contracting
+     and automated negotiations with rule-based declarative strategies </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Connecting
+     event-driven and reactive rules to legacy knowledge bases </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Integrating
+     rule bases and distributed fact bases </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>Rule base
+     validation, verification and exception handling on the Semantic Web</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l1 level1 lfo1;tab-stops:list 36.0pt'>XSL
+     transformations of event-driven and reactive rules </li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>Venue<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal>A limited number of rooms have been held for delegates in
+The Radisson SAS, <st1:place w:st="on">Galway</st1:place> at a special online
+rate of <strong>€135 for a single</strong> and <strong>€160 for a double or
+twin</strong>.<span style='mso-spacerun:yes'>  </span>The above rates quoted
+include breakfast. Reservation requests are subject to availability and will be
+allocated on a first come first served basis.</p>
+
+<p><span style='color:windowtext'>If you wish us to reserve your accommodation,
+please indicate your requirements at the <a
+href="https://eurwebsite.com/mlrules/register.asp">RuleML 2005 Registration
+Page</a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>Important Dates<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'>11 July
+     2005 -- Deadline for paper submissions. </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'>10
+     August 2005-- Notification of acceptance. </li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><st1:date
+     Year="2005" Day="2" Month="9" w:st="on">2 September 2005</st1:date> --
+     Final version of paper (camera-ready) due. <o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'>14
+     October 2005 -- Early registration deadline. <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='color:black'>10-12 November 2005 – RuleML 2005</span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;mso-outline-level:3'><b><span style='font-size:14.0pt'>Conference
+Program Co-Chairs<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'>Asaf
+     Adi, IBM, <st1:place w:st="on"><st1:country-region w:st="on">Israel</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'>Suzette
+     Stoutenburg, The MITRE Corporation, <st1:place w:st="on"><st1:country-region
+      w:st="on">USA</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'>Said
+     Tabet, RuleML Initiative and Macgregor Inc., <st1:country-region w:st="on"><st1:place
+      w:st="on">USA</st1:place></st1:country-region></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;mso-outline-level:3'><b><span style='font-size:14.0pt'>Conference
+General Co-Chairs<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Harold
+     Boley, National Research Council and <st1:place w:st="on"><st1:City w:st="on">University
+       of New Brunswick</st1:City>, <st1:country-region w:st="on">Canada</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Benjamin
+     Grosof, Massachusetts Institute of <st1:place w:st="on"><st1:City w:st="on">Technology</st1:City>,
+      <st1:country-region w:st="on">USA</st1:country-region></st1:place> </li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;mso-outline-level:3'><b><span style='font-size:14.0pt'>Steering
+Committee<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Asaf
+     Adi, IBM, <st1:place w:st="on"><st1:country-region w:st="on">Israel</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Grigoris
+     Antoniou, <st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+     w:st="on">Crete</st1:PlaceName>, FORTH, <st1:country-region w:st="on"><st1:place
+      w:st="on">Greece</st1:place></st1:country-region></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Harold
+     Boley, National Research Council and <st1:place w:st="on"><st1:City w:st="on">University
+       of New Brunswick</st1:City>, <st1:country-region w:st="on">Canada</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Benjamin
+     Grosof, Massachusetts Institute of <st1:place w:st="on"><st1:City w:st="on">Technology</st1:City>,
+      <st1:country-region w:st="on">USA</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'><span
+     lang=DE style='mso-ansi-language:DE'>Mike Dean, BBN Technologies, USA <o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Dieter
+     Fensel, <span style='color:windowtext'>Digital Enterprise Research
+     Institute (DERI), National <st1:place w:st="on"><st1:City w:st="on">University
+       of Ireland</st1:City>, <st1:country-region w:st="on">Ireland</st1:country-region></st1:place></span><o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'><span
+     style='color:windowtext'>Michael Kifer, State <st1:place w:st="on"><st1:PlaceType
+      w:st="on">University</st1:PlaceType> of <st1:PlaceName w:st="on">New York</st1:PlaceName></st1:place>
+     at Stony Brook</span><o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Steve
+     Ross-Talbot, Pi4 Technologies, <st1:place w:st="on"><st1:country-region
+      w:st="on">USA</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Suzette
+     Stoutenburg, The MITRE Corporation, <st1:place w:st="on"><st1:country-region
+      w:st="on">USA</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'>Said
+     Tabet, RuleML Initiative and Macgregor Inc., <st1:country-region w:st="on"><st1:place
+      w:st="on">USA</st1:place></st1:country-region></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l4 level1 lfo4;tab-stops:list 36.0pt'><st1:City
+     w:st="on">Gerd Wagner</st1:City>, <st1:State w:st="on">Brandenburg</st1:State>
+     <st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+     w:st="on">Technology</st1:PlaceName> at <st1:place w:st="on"><st1:City
+      w:st="on">Cottbus</st1:City>, <st1:country-region w:st="on">Germany</st1:country-region></st1:place></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;mso-outline-level:3'><b><span style='font-size:14.0pt'>Program
+Committee <span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Grigoris
+     Antoniou, <st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+     w:st="on">Crete</st1:PlaceName>, FORTH, <st1:place w:st="on"><st1:country-region
+      w:st="on">Greece</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Nick
+     Bassiliades, <st1:PlaceName w:st="on">Aristotle</st1:PlaceName> <st1:PlaceName
+     w:st="on">University</st1:PlaceName> of <st1:City w:st="on">Thessaloniki</st1:City>,
+     <st1:place w:st="on"><st1:country-region w:st="on">Greece</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Harold
+     Boley, National Research Council and <st1:place w:st="on"><st1:City w:st="on">University
+       of New Brunswick</st1:City>, <st1:country-region w:st="on">Canada</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><span
+     lang=DE style='mso-ansi-language:DE'>Mike Dean, BBN Technologies, USA <o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><st1:PersonName
+     w:st="on">Andreas Eberhart</st1:PersonName>, <st1:place w:st="on"><st1:City
+      w:st="on">International University</st1:City>, <st1:country-region w:st="on">Germany</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Dieter
+     Fensel, <span style='color:windowtext'>Digital Enterprise Research
+     Institute (DERI), National <st1:place w:st="on"><st1:City w:st="on">University
+       of Ireland</st1:City>, <st1:country-region w:st="on">Ireland</st1:country-region></st1:place></span><o:p></o:p></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><span
+     style='color:windowtext'>Ilia Goldfarb</span><o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Benjamin
+     Grosof, Massachusetts Institute of <st1:place w:st="on"><st1:City w:st="on">Technology</st1:City>,
+      <st1:country-region w:st="on">USA</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Guido
+     Governatori, The <st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+     w:st="on">Queensland</st1:PlaceName>, <st1:country-region w:st="on"><st1:place
+      w:st="on">Australia</st1:place></st1:country-region> <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Michael
+     Kifer, State <st1:place w:st="on"><st1:PlaceType w:st="on">University</st1:PlaceType>
+      of <st1:PlaceName w:st="on">New York</st1:PlaceName></st1:place> at Stony
+     Brook</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Sandy
+     Liu, National Research Council and <st1:place w:st="on"><st1:City w:st="on">University
+       of New Brunswick</st1:City>, <st1:country-region w:st="on">Canada</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Jan
+     Maluszynski, <st1:place w:st="on"><st1:City w:st="on">Linköping University</st1:City>,
+      <st1:country-region w:st="on">Sweden</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Massimo
+     Marchiori, W3C, <st1:City w:st="on">MIT</st1:City>, <st1:country-region
+     w:st="on">USA</st1:country-region> and <st1:place w:st="on"><st1:City
+      w:st="on">University of Venice</st1:City>, <st1:country-region w:st="on">Italy</st1:country-region></st1:place>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Donald
+     Nute, <st1:place w:st="on"><st1:City w:st="on">University of Georgia</st1:City>,
+      <st1:country-region w:st="on">USA</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Royi
+     Ronen, <st1:place w:st="on"><st1:City w:st="on">Technion</st1:City>, <st1:country-region
+      w:st="on">Israel</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Michael
+     Sintek, DFKI, <st1:country-region w:st="on"><st1:place w:st="on">Germany</st1:place></st1:country-region>
+     </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Bruce
+     Spencer, National Research Council and <st1:place w:st="on"><st1:City
+      w:st="on">University of New Brunswick</st1:City>, <st1:country-region
+      w:st="on">Canada</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Said
+     Tabet, RuleML Initiative and Macgregor Inc., <st1:country-region w:st="on"><st1:place
+      w:st="on">USA</st1:place></st1:country-region></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Dmitry
+     Tsarkov, <st1:place w:st="on"><st1:City w:st="on">University of Manchester</st1:City>,
+      <st1:country-region w:st="on">UK</st1:country-region></st1:place> </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Carlos
+     Viegas Damasio</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><st1:City
+     w:st="on">Gerd Wagner</st1:City>, <st1:State w:st="on">Brandenburg</st1:State>
+     <st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+     w:st="on">Technology</st1:PlaceName> at <st1:place w:st="on"><st1:City
+      w:st="on">Cottbus</st1:City>, <st1:country-region w:st="on">Germany</st1:country-region></st1:place></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:justify;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'>Kewen
+     Wang, <st1:place w:st="on"><st1:City w:st="on">Griffith University</st1:City>,
+      <st1:country-region w:st="on">Australia</st1:country-region></st1:place> </li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:18.0pt;text-align:justify'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
